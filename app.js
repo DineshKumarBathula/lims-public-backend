@@ -2,12 +2,12 @@ const cors = require("cors");
 const express = require("express");
 const path = require("path");
 const app = express();
-app.use(express.json());
+app.use(express.json({ limit: "20mb" })); //new line
+app.use(express.urlencoded({ extended: true, limit: "20mb" })); //new line
 app.use(express.static("public"));
 app.use(cors());
 // app.use(express.urlencoded({ extended: false }));
-app.use(express.json({ limit: "20mb" })); //new line
-app.use(express.urlencoded({ extended: true, limit: "20mb" })); //new line
+
 app.use("/public", express.static(path.join(__dirname, "public")));
 require("dotenv").config();
 const DELAY = process.env.DELAY || 0;
@@ -19,6 +19,9 @@ app.use((req, res, next) => {
     "Access-Control-Allow-Headers",
     "Content-Type,Authorization, data",
   );
+
+    next();
+
   // setTimeout(() => {
   //   next();
   // }, DELAY);
