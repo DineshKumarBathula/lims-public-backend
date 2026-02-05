@@ -1,0 +1,42 @@
+{
+  "local": {
+    "username": "root",
+    "password": "keka@3061",
+    "database": "lims",
+    "host": "127.0.0.1",
+    "dialect": "mysql",
+    "define": {
+      "timestamps": false
+    },
+    "pool": {
+      "max": 5,
+      "min": 0,
+      "acquire": 30000,
+      "idle": 10000
+    }
+  },
+  "testing": {
+    "username": "admin",
+    "password": "rgukt123",
+    "database": "lims2",
+    "host": "fancy-lims.c98oisyqu0gw.ap-south-1.rds.amazonaws.com",
+    "dialect": "mysql",
+    "connectTimeout": 30000,
+    "define": {
+      "timestamps": false
+    },
+    "pool": {
+      "max": 5,
+      "min": 0,
+      "acquire": 30000,
+      "idle": 10000
+    }
+  },
+  "production": {
+    "username": "root",
+    "password": "uday0403",
+    "database": "fancy",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  }
+}

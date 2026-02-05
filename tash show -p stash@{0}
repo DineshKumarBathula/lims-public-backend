@@ -1,0 +1,50 @@
+stash@{0}: WIP on f45: 0d5f964 hardend & cancel order
+stash@{1}: WIP on f45: f904c44 bit em
+stash@{2}: WIP on f45: a00d097 bitumen
+stash@{3}: WIP on f45: 889e67a bitumen core
+stash@{4}: WIP on f45: 6986987 core order updation function
+stash@{5}: WIP on f45: 1c6286a updated server
+stash@{6}: WIP on f45: d621a6b reset wb
+stash@{7}: WIP on f45: d621a6b reset wb
+stash@{8}: WIP on f45: d621a6b reset wb
+stash@{9}: WIP on f45: d292162 flyash blocks ds
+stash@{10}: WIP on f45: 63a12e7 blocks
+stash@{11}: WIP on f45: 35c7911 order reg & updation
+stash@{12}: WIP on f45: 004df5b core
+stash@{13}: WIP on f45: b6a59a5 order reg
+stash@{14}: WIP on f45: 6a42fea rsteel issue fixed
+stash@{15}: WIP on f45: 872153b Merge branch 'f45' of https://github.com/pavantechie1862/fancy-server into f45
+stash@{16}: WIP on f45: cd616f8 location qr in quotation
+stash@{17}: WIP on f45: eae0377 rSteel multiple grades case
+stash@{18}: WIP on f45: 8cddb61 dynamic pn & order no
+stash@{19}: WIP on f45: 9916698 galvanized chem report
+stash@{20}: WIP on f45: bf396f3 resolved wb resetting
+stash@{21}: WIP on f45: c0253f4 core reprts css updated & cust details bold
+stash@{22}: WIP on f45: a37e9ec clientInfo issue resolved
+stash@{23}: WIP on f45: 2264eb9 cores
+stash@{24}: WIP on f45: 1ea29c2 core
+stash@{25}: WIP on f45: d59018c edit in wb, uniq proforma, gst
+stash@{26}: WIP on f45: f901bcb order reg division
+stash@{27}: WIP on v3: 42235e4 multiple-sampleId
+stash@{28}: WIP on v3: 854f2ae order table
+stash@{29}: WIP on v3: 7c05edc tax qr
+stash@{30}: WIP on v3: f43481f reports list, qr
+stash@{31}: WIP on v3: e99a689 removed qr & margin for all reports
+stash@{32}: WIP on v3: 353892a modified job tabls
+stash@{33}: WIP on v3: d39d8d5 del
+stash@{34}: WIP on v3: 1afa2fc order sample del case
+stash@{35}: WIP on v3: cfc2365 order reg form changes normal & update order functions
+stash@{36}: WIP on v3: 333e438 update order letter & ulr
+stash@{37}: WIP on v3: 056dfc1 soil test method heavy & li8
+stash@{38}: WIP on v3: ef47ee8 soil report changes
+stash@{39}: WIP on v3: 144a6aa changes
+stash@{40}: WIP on v3: 8ed76ef changes
+stash@{41}: WIP on v3: 4618a42 rSteel new table mech
+stash@{42}: WIP on v3: cb0bd8a reports & order desc
+stash@{43}: WIP on v3: 7238fb4 cubes report
+stash@{44}: WIP on v3: 763075e changes
+stash@{45}: WIP on v3: c1a050f multi mail & contacts
+stash@{46}: WIP on v3: 81ed441 rsteel specification table
+stash@{47}: WIP on v3: da24030 tax invoice gst, bill, pan case
+stash@{48}: WIP on v3: c017e05 multiple bill address & pan
+stash@{49}: WIP on v3: 5c66491 corrections
