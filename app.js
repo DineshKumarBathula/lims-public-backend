@@ -70,10 +70,12 @@ app.use("/api/it", it);
 app.use("/api/cu", currentUser);
 app.use("/api/ledger", ledgerRouter);
 
+
+const PORT = process.env.PORT || 8081;
 db.sequelize.authenticate()   //new line
   .then(() => {
     console.log("DB Connected");
-    app.listen(process.env.PORT, () => {
+    app.listen(PORT, () => {
       console.log(`Server running`);
     });
   })
