@@ -5,7 +5,9 @@ const app = express();
 app.use(express.json());
 app.use(express.static("public"));
 app.use(cors());
-app.use(express.urlencoded({ extended: false }));
+// app.use(express.urlencoded({ extended: false }));
+app.use(express.json({ limit: "20mb" })); //new line
+app.use(express.urlencoded({ extended: true, limit: "20mb" })); //new line
 app.use("/public", express.static(path.join(__dirname, "public")));
 require("dotenv").config();
 const DELAY = process.env.DELAY || 0;
@@ -17,9 +19,9 @@ app.use((req, res, next) => {
     "Access-Control-Allow-Headers",
     "Content-Type,Authorization, data",
   );
-  setTimeout(() => {
-    next();
-  }, DELAY);
+  // setTimeout(() => {
+  //   next();
+  // }, DELAY);
 });
 const poDocumentRoutes = require("./routes/poDocuments");
 
@@ -68,8 +70,20 @@ app.use("/api/it", it);
 app.use("/api/cu", currentUser);
 app.use("/api/ledger", ledgerRouter);
 
-db.sequelize.sync().then(() => {
-  app.listen(process.env.PORT, () => {
-    console.log(`Server started on port ${process.env.PORT}`);
+db.sequelize.authenticate()   //new line
+  .then(() => {
+    console.log("DB Connected");
+    app.listen(process.env.PORT, () => {
+      console.log(`Server running`);
+    });
+  })
+  .catch(err => {
+    console.error("DB error:", err);
   });
-});
+
+
+// db.sequelize.sync().then(() => {
+//   app.listen(process.env.PORT, () => {
+//     console.log(`Server started on port ${process.env.PORT}`);
+//   });
+// });
